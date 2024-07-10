@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-VERSION = "6.0.0"
+VERSION = "6.0.0+ossobv1"
 LONG_DESCRIPTION = """
 .. image:: http://pinaxproject.com/pinax-design/patches/pinax-notifications.svg
     :target: https://pypi.python.org/pypi/pinax-notifications/
@@ -51,13 +51,12 @@ Features
 Supported Django and Python Versions
 ------------------------------------
 
-+-----------------+-----+-----+-----+
-| Django / Python | 3.6 | 3.7 | 3.8 |
-+=================+=====+=====+=====+
-|  2.2            |  *  |  *  |  *  |
-+-----------------+-----+-----+-----+
-|  3.0            |  *  |  *  |  *  |
-+-----------------+-----+-----+-----+
++-----------------+------+
+| Django / Python | 3.12 |
++=================+======+
++-----------------+------+
+|  4.2            |  *   |
++-----------------+------+
 """
 
 setup(
@@ -80,21 +79,18 @@ setup(
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
         "Framework :: Django",
-        'Framework :: Django :: 2.2',
-        'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.2',
         "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.12',
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     install_requires=[
-        "django>=2.2",
+        "django>=4.2,<5.0",
         "django-appconf>=1.0.1",
     ],
     tests_require=[

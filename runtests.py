@@ -23,6 +23,7 @@ DEFAULT_SETTINGS = dict(
             "NAME": ":memory:",
         }
     },
+    DEFAULT_AUTO_FIELD="django.db.models.AutoField",
     SITE_ID=1,
     ROOT_URLCONF="pinax.notifications.tests.urls",
     SECRET_KEY="notasecret",
